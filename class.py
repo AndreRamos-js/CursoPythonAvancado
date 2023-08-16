@@ -19,6 +19,11 @@ class Carro:
     def acelerar(self):
         print(f'{self.nome} está acelerando!')
 
+    def combustivel(self, combustivel):
+        print(f'{self.nome} está sendo movido a {combustivel}')
+
 mustang = Carro('Mustang')
 print(mustang.nome)
 mustang.acelerar()
+mustang.combustivel('gasolina')
+print(mustang.combustivel('alcool'))
